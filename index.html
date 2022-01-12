@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> MINI-PROJETO </title>
+        <link rel="icon" type="image/x-icon" href="img/img-icon.png">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Mochiy+Pop+One&family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+
+        <header id="header">
+            <h1 id="titulo"> Busque seus ANIMES ... </h1>
+    
+            <div id="div-form">
+              
+              <input id="inp-search" class="input" id="name" placeholder=" Digite aqui ..."/>
+              <button id="btn-search" onclick="buscar()" class="button" type="button"> Buscar </button>
+              <div id="loader" class="loader"></div>
+              
+            </div>
+
+            <div id="msg-erro">
+                <img id="img-erro" src="img/img_aviso.png">
+              
+                <h4>
+                  Você inseriu menos que 3 caracteres !
+                  Por favor realize uma nova pesquisa.
+                </h4>
+            </div>
+
+        </header>
+        
+        <section id="section-body">
+          <table class="styled-table" id="tabela"> 
+            <thead>
+              <tr>
+                <th id="th_title" value="0"> Título </th>
+                <th id="th_ano" value="0"> Ano </th>
+                <th id="th_score" value="0"> Score </th>
+                <th> Imagem </th>  
+              </tr>
+              
+            </thead>
+            
+            <tbody id="tbody">
+  
+            </tbody>
+          </table>
+  
+          <div id="imagem"> </div>
+        </section>
+        
+      <script src="js/script.js"></script>
+
+    </body>
+
+</html>
+
